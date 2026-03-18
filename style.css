@@ -3,7 +3,28 @@
     padding: 0;
     box-shadow: none;
 }
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+h1{
+    margin: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+h2, h3, h4, h5, h6{
+    margin: 20px;
+    font-size: 1.5rem;
+    color: #444;
+}
+p{
+    margin: 20px;
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 25%;
+}
 #links{
+    position: static;
     top: 0;
     left: 0;
     width: 100%;
