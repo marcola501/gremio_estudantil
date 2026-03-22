@@ -23,7 +23,7 @@ p{
     color: #555;
     max-width: 25%;
 }
-#links{
+#header{
     position: static;
     top: 0;
     left: 0;
@@ -31,8 +31,40 @@ p{
     height: 50px;
     background-color: #84c905;
     display: flex;
-    justify-content: right;
     align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+#header #links{
+    display: flex;
+    justify-content: right;
+    
+}
+#header img{
+    width: 3rem;
+    height: 3rem;
+    
+}
+#header img:hover{
+    scale: 1.1;
+    transition: all 0.3s ;
+}
+
+#alterarTema{
+    width: 50px;
+    height: 30px;
+    background-color: #f0f0f0;
+    border: none ;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ;
+}
+#alterarTema:hover{
+    width: 60px;
+    background-color: #ddd;
+    scale: 1.1;
 }
 #links a{
     color: white;
