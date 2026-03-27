@@ -9,7 +9,7 @@ function alterar_tema(){
 
     // Lemos a cor computada, porque a cor inicial vem do CSS e nao do style inline.
     const corAtual = getComputedStyle(body).backgroundColor;
-    body.style.transition = "background-color 0.5s ease";
+    body.style.transition = "background-color 0.5s ease-in-out";
     if (corAtual === "rgb(240, 240, 240)"){
         body.style.backgroundColor = temaEscuro[0];
         for (let i = 0;i<paragrafo.length;i++){
@@ -34,5 +34,13 @@ function alterar_tema(){
         }
     }
 };
+function doSomething() {
+  console.info("DOM carregado");
+}
 
+if (document.readyState === "loading") {  // Ainda carregando
+  document.addEventListener("DOMContentLoaded", doSomething);
+} else {  // `DOMContentLoaded` foi disparado
+  doSomething();
+}
 
