@@ -91,7 +91,7 @@ p{
     scale: 0.9;
 }
 article{
-    padding: 10%;
+    padding: 6%;
     display: grid;
     grid-template-columns: repeat(3, minmax(10rem, 1fr));
     gap: 2%;
@@ -107,7 +107,7 @@ article #post{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin: 0;
     font-size: 1.5rem;
     color: #333;
     transition: all 0.3s ;
