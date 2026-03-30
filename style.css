@@ -26,6 +26,9 @@ h2, h3, h4, h5, h6{
     font-size: 1.5rem;
     color: #444;
 }
+span #transparente{
+    color: #bbb;
+}
 p{
     margin: 20px;
     font-size: 1.2rem;
