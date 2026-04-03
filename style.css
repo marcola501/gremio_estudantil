@@ -96,15 +96,36 @@ p{
 article{
     padding: 6%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(10rem, 1fr));
+    grid-template-columns: repeat(3, minmax(1rem, 1fr));
     gap: 2%;
     margin: 2%;
 }
+article a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
 article #post{
-    border: 1px solid #ccc;
     width: 100%;
     max-width: 25rem;
+}
+article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+article #post img{
+    background-position: center;
+    background-size: auto;
+    border: 1px solid #ccc;
+    width: 100%;
     height: 15rem;
+    max-width: 25rem;
+    min-width: 5rem;
+    max-height: max-content;
+    min-height: 6.5rem;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -114,12 +135,25 @@ article #post{
     font-size: 1.5rem;
     color: #333;
     transition: all 0.3s ;
+    
 }
-article #post:hover{
+article #post:hover img{
     scale: 1.05;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 article #post:active{
     scale: 0.95;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+article a span{
+    font-size: 130%;
+    color: blue;
+    display: block;
+    width: 100%;
+    max-width: 25rem;
+    text-align: center;
+    transition: 0.6s ;
+}
+article a span:hover{
+    font-size: 145%;
 }
