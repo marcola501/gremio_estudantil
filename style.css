@@ -73,7 +73,7 @@ p{
 
 #alterarTema{
     color: #f4f4f4;
-    width: 5%;
+    width: 100px;
     height: 30px;
     background-color: #2a7f9d;
     border: solid #164a5d 2px;
@@ -83,7 +83,7 @@ p{
     transition: all 0.3s ;
 }
 #alterarTema:hover{
-    width: 6%;
+    width: 130px;
     border-radius: 72px;
     font-weight: bold;
     color: #ffffff;
