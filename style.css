@@ -121,7 +121,7 @@ article .post{
     max-width: 25rem;
     height: 15rem;
     background-color: #f4f4f4;
-    border-radius: 10px;
+    border-radius: 10px 10px 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,4 +143,22 @@ article .post img{
     height: 100%;
     object-fit: fill;
     border-radius: 10px;
+}
+article h4{
+    padding: 1em 0 1em 0;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 25rem;
+    background-color: #f4f4f4;
+    border-radius: 0 0 10px  10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    color: #333;
+    transition: all 0.3s ;
+}
+article h4:hover{
+    font-size: 140%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
