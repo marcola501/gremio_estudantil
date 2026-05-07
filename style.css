@@ -111,9 +111,20 @@ p{
 article{
     margin: 10%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0.4fr);
     gap: 3%;
-    
+}
+
+article.tela-grande{
+    grid-template-columns: repeat(4, 0.4fr);
+}
+
+article.tela-media{
+    grid-template-columns: repeat(3, 0.4fr);
+}
+
+article.tela-pequena{
+    grid-template-columns: repeat(2, 0.4fr);
 }
 article .post-link{
     display: inline-block;
@@ -123,7 +134,7 @@ article .post-link{
 article .post{
     border: 1px solid #ccc;
     width: 100%;
-    max-width: 25rem;
+    width: 17rem;
     height: 15rem;
     background-color: #f4f4f4;
     border-radius: 10px 10px 0 0;
@@ -153,7 +164,8 @@ article .documentario{
     padding: 1em 0 1em 0;
     border: 1px solid #ccc;
     width: 65%;
-    max-width: 25rem;
+    width: 17rem;
+    
     background-color: #f4f4f4;
     border-radius: 0 0 10px  10px;
     display: flex;
