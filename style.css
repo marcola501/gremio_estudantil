@@ -109,11 +109,16 @@ p{
     scale: 0.9;
 }
 article{
-    padding: 6%;
+    margin: 10%;
     display: grid;
-    grid-template-columns: repeat(3, minmax(10rem, 1fr));
-    gap: 2%;
-    margin: 2%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3%;
+    
+}
+article .post-link{
+    display: inline-block;
+    width: 65%;
+    max-width: 25rem;
 }
 article .post{
     border: 1px solid #ccc;
@@ -144,10 +149,10 @@ article .post img{
     object-fit: fill;
     border-radius: 10px;
 }
-article h4{
+article .documentario{
     padding: 1em 0 1em 0;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 65%;
     max-width: 25rem;
     background-color: #f4f4f4;
     border-radius: 0 0 10px  10px;
@@ -158,7 +163,8 @@ article h4{
     color: #333;
     transition: all 0.3s ;
 }
-article h4:hover{
+article .documentario:hover{
+    cursor: pointer;
     font-size: 140%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
