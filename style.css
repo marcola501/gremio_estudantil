@@ -151,11 +151,11 @@ article.tela-pequena .documentario{
 
 article.tela-pequena .post{
     height: auto;
-    aspect-ratio: 3/ 4;
+    aspect-ratio:  4/3  ;
 }
 
 article.tela-pequena .post img{
-    object-fit: cover;
+    object-fit: fill;
 }
 article .post-link{
     display: inline-block;
