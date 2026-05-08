@@ -189,7 +189,7 @@ article .post img{
     width: 100%;
     height: 100%;
     object-fit: fill;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 article .documentario{
     padding: 1em 0 1em 0;
