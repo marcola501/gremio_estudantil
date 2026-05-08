@@ -18,7 +18,7 @@ function aplicar_breakpoint() {
 		articles.forEach((article) => {
 			article.classList.add("tela-pequena");
 		});
-	} else if (largura <= 1024) {
+	} else if (largura <= 1224) {
 		articles.forEach((article) => {
 			article.classList.add("tela-media");
 		});

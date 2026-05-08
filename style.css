@@ -121,10 +121,41 @@ article.tela-grande{
 
 article.tela-media{
     grid-template-columns: repeat(3, 0.4fr);
+    margin: 8% 6%;
+    gap: 3.5%;
+}
+
+article.tela-media .post-link,
+article.tela-media .post,
+article.tela-media .documentario{
+    width: 14rem;
+    max-width: 100%;
+}
+
+article.tela-media .post{
+    height: 13rem;
 }
 
 article.tela-pequena{
     grid-template-columns: repeat(2, 0.4fr);
+    margin: 6% 4%;
+    gap: 4%;
+}
+
+article.tela-pequena .post-link,
+article.tela-pequena .post,
+article.tela-pequena .documentario{
+    width: 100%;
+    max-width: 100%;
+}
+
+article.tela-pequena .post{
+    height: auto;
+    aspect-ratio: 4 / 3;
+}
+
+article.tela-pequena .post img{
+    object-fit: cover;
 }
 article .post-link{
     display: inline-block;
