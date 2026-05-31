@@ -1,17 +1,21 @@
                     
 function alterar_tema(){
     const body = document.body;
-    const paragrafo = /** @type {NodeListOf<HTMLElement>} */ document.querySelectorAll("p");
-    const titulo =/** @type {NodeListOf<HTMLElement>} */  document.querySelectorAll("h1");
+    const paragrafo = /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll("p"));
+    const titulo =/** @type {NodeListOf<HTMLElement>} */  (document.querySelectorAll("h1"));
     const titulo2 = /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll("h2, h3, h4, h5, h6"));
     const temaEscuro = ["#2b2424", "#f9dfdf", "#f5d9d9", "#f1dada"]; // body,paragrafo,titulo e titulos menores
     const temaClaro = ["#f0f0f0", "#333", "#444", "#555"];
     const insta = /** @type {HTMLImageElement | null} */ (document.getElementById("instaLogo"));
+    const home = /** @type {HTMLImageElement | null} */ (document.getElementById("home"));
     const sombra =  /** @type {NodeListOf<HTMLElement>} */ (document.querySelectorAll(".post"));
 
     if (!insta) {
         console.warn("Logo do Instagram nao encontrada.");
         return;
+    }
+    if (!home){
+        console.warn("Logo do home nao encontrada.");
     }
 
     // Lemos a cor computada, porque a cor inicial vem do CSS e nao do style inline.
@@ -33,6 +37,9 @@ function alterar_tema(){
         insta.style.width = "3.5rem";
         insta.style.height = "3.5rem";
         insta.src = "imagens/instalogo.png";
+        if (home) {
+            home.src = "imagens/house.png";
+        }
         for (let i = 0; i < sombra.length; i++) {
             sombra[i].style.boxShadow = "0 4px 8px rgba(244, 238, 238, 0.37)";
         }
@@ -50,6 +57,7 @@ function alterar_tema(){
         insta.src = "imagens/instaLogoBranca.png";
         insta.style.width = "2rem";
         insta.style.height = "2rem";
+        
         for (let i = 0; i < sombra.length; i++) {
             sombra[i].style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
         }
